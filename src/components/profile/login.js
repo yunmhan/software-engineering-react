@@ -31,7 +31,7 @@ export const Login = () => {
   const login = () =>
     service.findUserByCredentials(loginUser)
       .then((user) => {
-        //navigate(`/home/${user._id}`)
+        // navigate(`/home/${user._id}`)
       });
   useEffect(findAllUsers, []);
   return (
