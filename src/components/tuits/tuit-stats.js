@@ -1,3 +1,7 @@
+/**
+ *@file implement tuit stats including replies, retuits. likes. and dislikes
+ */
+
 import React from "react";
 
 const TuitStats = ({tuit, likeTuit = () => {}, dislikeTuit = () => {}}) => {
