@@ -11,8 +11,7 @@ test('tuits render', () => {
         )
     })
     const root = tuitsRender.root
-    const ttrTuits = root.findAllByProps({
-                                             className: 'ttr-tuit'})
+    const ttrTuits = root.findAllByProps({className: 'ttr-tuit'})
     expect(ttrTuits.length).toBe(tuitsJson.length)
     ttrTuits.forEach((ttrTuit, ndx) => {
         expect(ttrTuit.props.children).toBe(tuitsJson[ndx].tuit)
